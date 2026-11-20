@@ -552,7 +552,8 @@ html.no-js .main{opacity:1;transform:none;}
 .letter-sec{text-align:center;}
 .env-stage{
   position:relative;
-  margin:2.4rem auto 0;
+  /* 봉투를 열면 뚜껑(58%)이 위로 젖혀지므로 그만큼 위쪽 여백을 확보 */
+  margin:calc(min(346px,80vw) * .42) auto 0;
   width:min(346px,80vw);
   perspective:1500px;
 }
